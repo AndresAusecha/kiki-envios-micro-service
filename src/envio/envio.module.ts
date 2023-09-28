@@ -25,7 +25,7 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
       transport: Transport.RMQ,
       options: {
         urls: [
-          'http://localhost:15672',
+          'amqp://guest:guest@rabbitmq:5672',
         ],
         queue: 'rabbit-mq-kiki',
       },
